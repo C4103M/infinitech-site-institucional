@@ -3,7 +3,7 @@ import { Target, TrendingUp, Globe } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="section-padding bg-card/30">
+    <section id="sobre" className="section-padding bg-muted/40">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <motion.div

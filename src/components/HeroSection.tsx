@@ -1,24 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <img
-        src={heroBg}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover"
-        width={1920}
-        height={1080}
-      />
-      <div className="absolute inset-0 bg-background/80" />
-      <div
-        className="absolute inset-0 opacity-30"
-        style={{ background: "var(--hero-gradient)" }}
-      />
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0" style={{ background: "var(--hero-gradient)" }} />
+      
+      {/* Decorative shapes */}
+      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="relative container mx-auto px-4 text-center max-w-4xl pt-16">
         <motion.div
@@ -30,7 +22,7 @@ const HeroSection = () => {
             Empresa Júnior de Tecnologia
           </span>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 text-foreground">
             Transformamos sua presença digital com{" "}
             <span className="text-gradient">sites de alta performance</span> e{" "}
             anúncios que vendem.
