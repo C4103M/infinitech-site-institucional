@@ -41,8 +41,15 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:block">
+        {/* CTA + Theme */}
+        <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            aria-label="Alternar tema"
+            className="p-1.5 rounded-md text-muted-foreground/50 hover:text-muted-foreground transition-colors"
+          >
+            {dark ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
           <Button variant="cta" size="sm" asChild>
             <a href="#contato">Fale Conosco</a>
           </Button>
