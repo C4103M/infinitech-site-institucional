@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Col 1 */}
           <div>
             <a href="#" className="font-display text-xl font-bold tracking-tight">
-              <span className="text-gradient">Nexus</span>
+              <span className="text-gradient">Infinitech</span>
               <span className="text-foreground">Jr</span>
             </a>
             <p className="text-sm text-muted-foreground mt-3 leading-relaxed max-w-xs">
@@ -56,23 +56,23 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Localização</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Centro Tecnológico — Universidade<br />
-              Av. Universitária, s/n<br />
-              Campus Principal
+              Instituto Federal de São Paulo<br />
+              Avenida dos 3 poderes, n° 375<br />
+              Residencial Central Parque
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="px-3 py-1.5 rounded-md bg-secondary text-xs text-muted-foreground font-medium">
                 Brasil Júnior
               </span>
               <span className="px-3 py-1.5 rounded-md bg-secondary text-xs text-muted-foreground font-medium">
-                Federação Estadual
+                Núcleo Campinas
               </span>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border mt-12 pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} NexusJr. Todos os direitos reservados.
+          © {new Date().getFullYear()} InfinitechJr. Todos os direitos reservados.
         </div>
       </div>
     </footer>
