@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -12,6 +12,12 @@ const navLinks = [
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dark, setDark] = useState(() => document.documentElement.classList.contains("dark"));
+
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle("dark");
+    setDark(!dark);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
@@ -35,8 +41,15 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:block">
+        {/* CTA + Theme */}
+        <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            aria-label="Alternar tema"
+            className="p-1.5 rounded-md text-muted-foreground/50 hover:text-muted-foreground transition-colors"
+          >
+            {dark ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
           <Button variant="cta" size="sm" asChild>
             <a href="#contato">Fale Conosco</a>
           </Button>
