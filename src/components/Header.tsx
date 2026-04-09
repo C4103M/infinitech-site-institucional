@@ -11,6 +11,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [dark, setDark] = useState(() => document.documentElement.classList.contains("dark"));
 
   const toggleTheme = () => {
