@@ -83,11 +83,17 @@
         --input: 220 14% 18%;
         --ring: 210 100% 55%;
 
-        --hero-gradient: linear-gradient(
+        /* --hero-gradient: linear-gradient(
             135deg,
             hsl(210 100% 50% / 0.1),
             hsl(165 80% 42% / 0.06)
-        );
+        ); */
+        --hero-gradient: linear-gradient(
+            0deg,
+            rgba(6, 6, 54, 0.50) 0%, rgba(6, 6, 54, 0.50) 100%), 
+            url("./assets/hero-img-black.png") 
+            lightgray 50% / cover no-repeat;
+
         --glow-primary: 0 4px 20px hsl(210 100% 55% / 0.25);
         --glow-accent: 0 4px 20px hsl(165 80% 42% / 0.2);
 

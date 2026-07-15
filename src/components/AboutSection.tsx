@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, TrendingUp, Globe } from "lucide-react";
-
+import AboutImg from "../assets/about-img.png"
 const AboutSection = () => {
     return (
         <section id="sobre" className="section-padding bg-muted/40">
@@ -34,7 +34,14 @@ const AboutSection = () => {
                             profissional e campanhas que convertem.
                         </p>
                     </motion.div>
+                    
+                    <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="grid gap-4 bg-gradient-to-b from-[rgba(39,179,255,0.80)] to-[rgba(51,245,255,0.80)] w-full relative">
+                            <img className="translate-x-4 -translate-y-4" src={AboutImg} />
 
+                    </motion.div>
+{/* 
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -78,7 +85,7 @@ const AboutSection = () => {
                                 </div>
                             </div>
                         ))}
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </section>

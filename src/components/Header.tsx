@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Logo from "../assets/Logo_fundo_transparente2.png"
+import LogoWhite from "../assets/Logo_fundo_transparente-white.png"
 const navLinks = [
     { label: "Serviços", href: "#servicos" },
     { label: "Processo", href: "#processo" },
@@ -29,8 +30,10 @@ const Header = () => {
                     href="#"
                     className="font-display text-xl font-bold tracking-tight"
                 >
-                    <span className="text-gradient">Infinitech</span>
-                    <span className="text-foreground">Jr</span>
+                    {/* <span className="text-gradient">Infinitech</span>
+                    <span className="text-foreground">Jr</span> */}
+                    
+                    <img src={dark ? Logo : LogoWhite} className="scale-[0.8]" />
                 </a>
 
                 {/* Desktop Nav */}
