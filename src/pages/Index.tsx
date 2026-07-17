@@ -5,6 +5,7 @@ import ProcessSection from "@/components/ProcessSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import IdentitySection from "@/components/IdentitySection";
+import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -16,6 +17,7 @@ const Index = () => {
             <ValueSection />
             <AboutSection />
             <IdentitySection />
+            <ServicesSection />
             <ProcessSection />
             <ContactSection />
             <Footer />
