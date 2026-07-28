@@ -6,7 +6,7 @@ const values = [
         icon: DollarSign,
         title: "Custo Acessível",
         description:
-            "Preços até 70% menores que o mercado, com a mesma qualidade de grandes agências.",
+            "Preços menores que o mercado, com a mesma qualidade de grandes agências.",
     },
     {
         icon: Zap,

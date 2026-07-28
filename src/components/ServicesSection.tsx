@@ -17,7 +17,7 @@ const services = [
     },
     {
         icon: TrendingUp,
-        title: "Tráfego pago",
+        title: "Divulgação e campanha",
         description:
             "Planejamento e gestão de campanhas em Google Ads e Meta Ads, com acompanhamento de métricas e otimização contínua para reduzir custo por resultado.",
     },

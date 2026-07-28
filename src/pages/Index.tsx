@@ -4,7 +4,7 @@ import ValueSection from "@/components/ValueSection";
 import ProcessSection from "@/components/ProcessSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
-import IdentitySection from "@/components/IdentitySection";
+import IdentitySection from "@/components/MVVSection";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -18,10 +18,10 @@ const Index = () => {
             <AboutSection />
             <IdentitySection />
             <ServicesSection />
-            <ProcessSection />
+            {/* <ProcessSection /> */}
             <ContactSection />
             <Footer />
-            <WhatsAppButton />
+            {/* <WhatsAppButton /> */}
         </div>
     );
 };

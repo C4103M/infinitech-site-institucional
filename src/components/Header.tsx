@@ -5,9 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../assets/Logo_fundo_transparente2.png"
 import LogoWhite from "../assets/Logo_fundo_transparente-white.png"
 const navLinks = [
-    { label: "Serviços", href: "#servicos" },
-    { label: "Processo", href: "#processo" },
+    { label: "Diferencial", href: "#diferencial" },
     { label: "Sobre Nós", href: "#sobre" },
+    { label: "Cultura", href: "#cultura" },
+    { label: "Serviços", href: "#servicos" },
+    // { label: "Processo", href: "#processo" },
     { label: "Contato", href: "#contato" },
 ];
 

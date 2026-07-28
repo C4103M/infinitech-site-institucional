@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const challenges = [
+const challenges: string[] = [
     "Site lento ou desatualizado",
     "Poucas vendas online",
     "Começando do zero",
+    "Outro",
 ];
 
 const ContactSection = () => {
@@ -18,22 +19,55 @@ const ContactSection = () => {
         email: "",
         company: "",
         challenge: "",
+        customChallenge: "",
     });
+
+    const [otherSelected, setOtherSelected] = useState("");
+    useEffect(() => {
+        // Código executado quando 'otherSelected' mudar de valor
+        console.log("O estado mudou para:", otherSelected);
+
+        if (otherSelected) {
+            // Executa a lógica de mudança do seu elemento
+        }
+    }, [otherSelected]);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (!form.name.trim() || !form.email.trim() || !form.challenge) {
+
+        const isOtherInvalid =
+            form.challenge === "Outro" && !form.customChallenge.trim();
+
+        if (
+            !form.name.trim() ||
+            !form.email.trim() ||
+            !form.challenge ||
+            isOtherInvalid
+        ) {
             toast({
                 title: "Preencha todos os campos obrigatórios",
                 variant: "destructive",
             });
             return;
         }
+
+        const finalChallenge =
+            form.challenge === "Outro" ? form.customChallenge : form.challenge;
+
+        console.log("Desafio enviado:", finalChallenge);
+        
         toast({
             title: "Mensagem enviada!",
             description: "Entraremos em contato em até 24h.",
         });
-        setForm({ name: "", email: "", company: "", challenge: "" });
+
+        setForm({
+            name: "",
+            email: "",
+            company: "",
+            challenge: "",
+            customChallenge: "",
+        });
     };
 
     return (
@@ -132,6 +166,29 @@ const ContactSection = () => {
                                 </button>
                             ))}
                         </div>
+
+                        {/* Campo exibido condicionalmente quando selecionar "Outro" */}
+                        {form.challenge === "Outro" && (
+                            <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                className="mt-3"
+                            >
+                                <Input
+                                    value={form.customChallenge}
+                                    onChange={(e) =>
+                                        setForm({
+                                            ...form,
+                                            customChallenge: e.target.value,
+                                        })
+                                    }
+                                    placeholder="Descreva brevemente o seu desafio..."
+                                    maxLength={200}
+                                    className="bg-background/50 border-border"
+                                />
+                            </motion.div>
+                        )}
                     </div>
 
                     <Button
