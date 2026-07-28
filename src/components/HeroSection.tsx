@@ -36,7 +36,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.7 }}
                 >
                     <span className="inline-block text-sm font-display font-semibold text-accent mb-6 tracking-widest uppercase color-[#C2FFDE]">
-                        Empresa Júnior de Tecnologia do IFSP SALTO
+                        EMPRESA JÚNIOR DE TECNOLOGIA DO IFSP - SALTO
                     </span>
 
                     <h1 className="font-display text-center mb-6">
