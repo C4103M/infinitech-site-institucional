@@ -21,21 +21,24 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-3 mt-4">
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/company/infinitech-jr/"
+                                target="_blank"
                                 aria-label="LinkedIn"
                                 className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                             >
                                 <Linkedin size={18} />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/infinitech_jr/"
+                                target="_blank"
                                 aria-label="Instagram"
                                 className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                             >
                                 <Instagram size={18} />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/Projetos-infinitech/"
+                                target="_blank"
                                 aria-label="GitHub"
                                 className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                             >
