@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="border-t border-border bg-muted/30">
             <div className="container mx-auto px-4 py-16">
-                <div className="grid md:grid-cols-3 gap-10">
+                <div className="grid md:grid-cols-3 gap-8">
                     {/* Col 1 */}
                     <div>
                         <a
@@ -102,11 +102,16 @@ const Footer = () => {
                             Localização
                         </h4>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            Instituto Federal de São Paulo
+                            Instituto Federal de Educação, Ciência e Tecnologia
+                            de São Paulo
                             <br />
-                            Avenida dos 3 poderes, n° 375
+                            IFSP Campus Salto
+                            <br />
+                            Avenida dos Três Poderes, n° 375
                             <br />
                             Residencial Central Parque
+                            <br />
+                            Salto, SP
                         </p>
                         <div className="mt-6 flex flex-wrap gap-3">
                             <span className="px-3 py-1.5 rounded-md bg-secondary text-xs text-muted-foreground font-medium">
