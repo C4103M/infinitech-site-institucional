@@ -20,8 +20,9 @@ const Header = () => {
     );
 
     const toggleTheme = () => {
-        document.documentElement.classList.toggle("dark");
-        setDark(!dark);
+        const isDark = document.documentElement.classList.toggle("dark");
+        setDark(isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
     };
 
     return (
