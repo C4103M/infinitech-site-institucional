@@ -21,17 +21,10 @@ const AboutSection = () => {
                             </span>
                         </h2>
                         <p className="text-muted-foreground leading-relaxed mb-4">
-                            Somos uma Empresa Júnior vinculada ao curso de
-                            Tecnologia, formada por estudantes apaixonados por
-                            resolver problemas reais através do digital. Nosso
-                            foco é entregar soluções de alto impacto com custos
-                            acessíveis.
+                            Somos a <strong className="text-foreground">Infinitech Jr</strong>, a Empresa Júnior de Ciência da Computação e Tecnologia do <strong className="text-foreground">IFSP (Câmpus Salto)</strong>. Formada por estudantes talentosos e apaixonados por resolver problemas reais através da tecnologia, nosso foco é entregar soluções de alto impacto com excelente custo-benefício.
                         </p>
                         <p className="text-muted-foreground leading-relaxed">
-                            Atuamos com desenvolvimento web moderno e gestão
-                            estratégica de tráfego pago, ajudando empresas a
-                            crescerem no ambiente digital com presença
-                            profissional e campanhas que convertem.
+                            Especialistas em <strong className="text-foreground">desenvolvimento de sites</strong>, <strong className="text-foreground">desenvolvimento de sistemas</strong> e gestão estratégica de tráfego pago, ajudamos empresas em Salto, Indaiatuba, Itu, Campinas e região a acelerar seu crescimento no ambiente digital.
                         </p>
                     </motion.div>
                     
